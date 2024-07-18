@@ -5,7 +5,7 @@ class User():
         self._password = password
         
     def get_password(self):
-        return
+        return self._password
     
     def change_password(self, new_password):
         self._password = new_password
@@ -19,3 +19,12 @@ class Aluno(User):
     
     def get_cpf(self):
         return self.__cpf
+
+class Professor(User):
+    def __init__(self, matricula, salario, materia):
+        self.matricula = matricula
+        self.__salario = salario
+        self.materia = materia
+
+    def get_salario(self):
+        return self.__salario
