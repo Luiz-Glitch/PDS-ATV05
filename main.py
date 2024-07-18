@@ -5,7 +5,7 @@ class User():
         self._password = password
         
     def get_password(self):
-        return 
+        return self._password
     
     def change_password(self, new_password):
         self._password = new_password
